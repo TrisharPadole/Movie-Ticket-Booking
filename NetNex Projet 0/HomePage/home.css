@@ -1,0 +1,196 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 5px;
+    padding: 3px;
+    background: linear-gradient(to bottom, #ffffff, #090909);
+}
+
+header {
+    background-color: #162b47;
+    color: #fff;
+    padding:  1px;
+    text-align: center;
+}
+
+
+main {
+    padding: 5px;
+
+}
+
+.location-selector {
+    margin-top: 4px;
+    margin-bottom: 3px;
+    text-align: center;
+}
+
+.location-selector label {
+    font-size: 1rem;
+    margin-right: 0.5rem;
+}
+
+.location-selector select {
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+.movie-list {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 2rem;
+}
+
+.movie {
+    background-color: #ffffff;
+    border: 1px solid #162b47;
+    padding: 1rem;
+    width: calc(50% - 2rem);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+    
+}
+
+.movie img {
+    width: 200px; 
+    height: 300px; 
+    object-fit: cover;
+}
+
+.movie h3 {
+    margin: 1rem 0 0.5rem;
+}
+
+.movie p {
+    margin: 0 0 1rem;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: #162b47;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+
+.search-bar {
+    margin-top: 4px;
+    text-align: center;
+}
+
+.search-bar input {
+    padding: 0.5rem;
+    font-size: 1rem;
+    width: 200px;
+    margin-right: 0.5rem;
+}
+
+.search-bar button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #555;
+}
+
+nav {
+    margin-top: 4px;
+    text-align: center;
+    justify-items:center
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-links li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.nav-links button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin: 0 0.5rem;
+}
+
+.nav-links button:hover {
+    background-color: #555;
+}
+
+.auth-buttons {
+    display: none; /* Hide the old auth-buttons container */
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}

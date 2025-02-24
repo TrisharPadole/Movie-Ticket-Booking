@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieMania India - Book Movie Shows Online</title>
+    <link rel="stylesheet" href="home.css">
+    <script src="home.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Welcome to MovieMania ! </h1>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#now-showing">Now Showing</a></li>
+                <li><a href="#coming-soon">Upcoming Movies</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><button id="login-button">Login</button></li>
+                <li><button id="register-button">Register</button></li>
+            </ul>
+        </nav>
+       
+        <div class="search-bar">
+            <input type="text" id="search" placeholder="Search for movies...">
+            <button id="search-button">Search</button>
+        </div> 
+        <div class="location-selector">
+            <label for="location">Select Location:</label>
+            <select id="location" name="location">
+                <option value="mumbai">Mumbai</option>
+                <option value="delhi">Delhi</option>
+                <option value="bangalore">Bangalore</option>
+                <option value="chennai">Chennai</option>
+                <option value="kolkata">Kolkata</option>
+            </select>
+        </div>
+    </header>
+    <main>
+        <section id="now-showing">
+            <h2>Now Showing</h2>
+            <div class="movie-list">
+                <div class="movie">
+                    <img src="Assets/movie1.jpg" alt="Movie 1">
+                    <h3>Spider-Man</h3>
+                    <p>Peter Parker becomes a superhero after he is bitten by a radioactive spider.</p>
+                    <button>Book Now</button>
+                </div>
+                <div class="movie">
+                    <img src="Assets/movie2.jpg" alt="Movie 2">
+                    <h3>Pushpa 2</h3>
+                    <p>Pushpa`s meteoric rise as he expands his red sandalwood empire beyond borders.</p>
+                    <button>Book Now</button>
+                </div>
+                <div class="movie">
+                    <img src="Assets/movie5.jpg" alt="Movie 5">
+                    <h3>Cars 3</h3>
+                    <p>Lightning McQueen is suddenly pushed out of the sport he loves.</p>
+                    <button>Book Now</button>
+                </div>
+                <div class="movie">
+                    <img src="Assets/movie6.jpg" alt="Movie 6">
+                    <h3>The Wolf of Wall Street</h3>
+                    <p>A wealthy stock-broker living the high life to his fall involving crime</p>
+                    <button>Book Now</button>
+                </div>
+            </div>
+        </section>
+        <section id="coming-soon">
+            <h2>Coming Soon</h2>
+            <div class="movie-list">
+                <div class="movie">
+                    <img src="Assets/movie3.jpg" alt="Movie 3">
+                    <h3>Mufasa</h3>
+                    <p>Rafiki to relay the legend of the unlikely rise of the beloved king of the Pride Lands.</p>
+                </div>
+                <div class="movie">
+                    <img src="Assets/movie4.jpg" alt="Movie 4">
+                    <h3>Rockstar</h3>
+                    <p>Jordan seeking heartbreak to fuel his music leading to his stardom and a broken heart.</p>
+                </div>
+                <div class="movie">
+                    <img src="Assets/movie7.jpg" alt="Movie 7">
+                    <h3>The Fast and the Furious</h3>
+                    <p>LAPD officer Brian goes undercover to investigate Dominic Toretto.</p>
+                </div>
+                <div class="movie">
+                    <img src="Assets/movie8.jpg" alt="Movie 8">
+                    <h3>Baby Driver</h3>
+                    <p>Baby,sa young getaway driver finds himself taking part in a heist doomed to fail.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Email: contact@moviemania.com</p>
+            <p>Phone: 123-456-7890</p>
+        </section>
+    </footer>
+
+    <!-- Login Modal -->
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="close-login">&times;</span>
+            <h2>Login</h2>
+            <form id="login-form">
+                <label for="login-email">Email:</label>
+                <input type="email" id="login-email" name="email" required>
+                <label for="login-password">Password:</label>
+                <input type="password" id="login-password" name="password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Register Modal -->
+    <div id="register-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="close-register">&times;</span>
+            <h2>Register</h2>
+            <form id="register-form">
+                <label for="register-email">Email:</label>
+                <input type="email" id="register-email" name="email" required>
+                <label for="register-password">Password:</label>
+                <input type="password" id="register-password" name="password" required>
+                <button type="submit">Register</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
