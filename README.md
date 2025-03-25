@@ -49,9 +49,6 @@ movie-ticket-booking/
 ## Contribution
 Feel free to contribute to this project by submitting a pull request.
 
-## License
-This project is licensed under the MIT License.
-
 ---
 Developed by Trishar Padole (https://github.com/trisharpadole)
 
